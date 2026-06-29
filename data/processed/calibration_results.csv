@@ -1,0 +1,153 @@
+model,interface,task_id,family,difficulty,runs,pass_rate,cell_label,parse_failure_rate,premature_final_rate,loop_timeout_rate,policy_state_rate,avg_steps,avg_latency_sec,failure_subtypes
+qwen2.5:7b,tool_compiler,calendar_medium_00,calendar,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,4.95,{}
+qwen2.5:7b,tool_compiler,calendar_medium_01,calendar,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.07,{}
+qwen2.5:7b,tool_compiler,calendar_medium_02,calendar,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.16,{}
+qwen2.5:7b,tool_compiler,calendar_medium_03,calendar,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.26,{}
+qwen2.5:7b,tool_compiler,calendar_medium_04,calendar,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.24,{}
+qwen2.5:7b,tool_compiler,calendar_hard_00,calendar,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,11.80,33.33,{}
+qwen2.5:7b,tool_compiler,calendar_hard_01,calendar,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,9.80,27.34,{}
+qwen2.5:7b,tool_compiler,calendar_hard_02,calendar,hard,5,0.200,calibrated,0.000,0.000,0.800,0.000,11.80,34.34,"{""loop_or_timeout"": 4}"
+qwen2.5:7b,tool_compiler,calendar_hard_03,calendar,hard,5,0.200,calibrated,0.000,0.000,0.800,0.000,11.60,33.23,"{""loop_or_timeout"": 4}"
+qwen2.5:7b,tool_compiler,calendar_hard_04,calendar,hard,5,0.000,too_hard,0.000,0.000,1.000,0.000,12.00,35.47,"{""loop_or_timeout"": 5}"
+qwen2.5:7b,tool_compiler,refund_medium_00,refund,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.62,{}
+qwen2.5:7b,tool_compiler,refund_medium_01,refund,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.56,{}
+qwen2.5:7b,tool_compiler,refund_medium_02,refund,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.68,{}
+qwen2.5:7b,tool_compiler,refund_medium_03,refund,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.45,{}
+qwen2.5:7b,tool_compiler,refund_medium_04,refund,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.57,{}
+qwen2.5:7b,tool_compiler,refund_hard_00,refund,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.50,{}
+qwen2.5:7b,tool_compiler,refund_hard_01,refund,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.53,{}
+qwen2.5:7b,tool_compiler,refund_hard_02,refund,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.60,{}
+qwen2.5:7b,tool_compiler,refund_hard_03,refund,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.31,{}
+qwen2.5:7b,tool_compiler,refund_hard_04,refund,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.44,{}
+qwen2.5:7b,tool_compiler,file_medium_00,file_email,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.67,{}
+qwen2.5:7b,tool_compiler,file_medium_01,file_email,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.47,{}
+qwen2.5:7b,tool_compiler,file_medium_02,file_email,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.96,{}
+qwen2.5:7b,tool_compiler,file_medium_03,file_email,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,8.15,{}
+qwen2.5:7b,tool_compiler,file_medium_04,file_email,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,8.19,{}
+qwen2.5:7b,tool_compiler,file_hard_00,file_email,hard,5,0.000,too_hard,0.000,0.000,1.000,0.000,12.00,32.59,"{""loop_or_timeout"": 5}"
+qwen2.5:7b,tool_compiler,file_hard_01,file_email,hard,5,0.000,too_hard,0.000,0.000,1.000,0.000,12.00,33.55,"{""loop_or_timeout"": 5}"
+qwen2.5:7b,tool_compiler,file_hard_02,file_email,hard,5,0.000,too_hard,0.000,0.000,1.000,0.000,12.00,33.19,"{""loop_or_timeout"": 5}"
+qwen2.5:7b,tool_compiler,file_hard_03,file_email,hard,5,0.000,too_hard,0.000,0.000,1.000,0.000,12.00,34.00,"{""loop_or_timeout"": 5}"
+qwen2.5:7b,tool_compiler,file_hard_04,file_email,hard,5,0.000,too_hard,0.000,0.000,1.000,0.000,12.00,29.81,"{""loop_or_timeout"": 5}"
+qwen2.5:7b,tool_compiler,inventory_medium_00,inventory,medium,5,0.800,calibrated,0.000,0.000,0.200,0.000,4.00,9.73,"{""loop_or_timeout"": 1}"
+qwen2.5:7b,tool_compiler,inventory_medium_01,inventory,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,4.59,{}
+qwen2.5:7b,tool_compiler,inventory_medium_02,inventory,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,4.74,{}
+qwen2.5:7b,tool_compiler,inventory_medium_03,inventory,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.03,{}
+qwen2.5:7b,tool_compiler,inventory_medium_04,inventory,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.09,{}
+qwen2.5:7b,tool_compiler,inventory_hard_00,inventory,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.08,{}
+qwen2.5:7b,tool_compiler,inventory_hard_01,inventory,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.06,{}
+qwen2.5:7b,tool_compiler,inventory_hard_02,inventory,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.38,{}
+qwen2.5:7b,tool_compiler,inventory_hard_03,inventory,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.31,{}
+qwen2.5:7b,tool_compiler,inventory_hard_04,inventory,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.33,{}
+qwen2.5:7b,raw_json,calendar_medium_00,calendar,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.14,{}
+qwen2.5:7b,raw_json,calendar_medium_01,calendar,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.14,{}
+qwen2.5:7b,raw_json,calendar_medium_02,calendar,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.14,{}
+qwen2.5:7b,raw_json,calendar_medium_03,calendar,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.14,{}
+qwen2.5:7b,raw_json,calendar_medium_04,calendar,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.11,{}
+qwen2.5:7b,raw_json,calendar_hard_00,calendar,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,4.00,10.02,{}
+qwen2.5:7b,raw_json,calendar_hard_01,calendar,hard,5,0.800,calibrated,0.000,0.000,0.200,0.000,6.00,14.71,"{""loop_or_timeout"": 1}"
+qwen2.5:7b,raw_json,calendar_hard_02,calendar,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,4.20,10.39,{}
+qwen2.5:7b,raw_json,calendar_hard_03,calendar,hard,5,0.800,calibrated,0.000,0.000,0.200,0.000,6.20,15.33,"{""loop_or_timeout"": 1}"
+qwen2.5:7b,raw_json,calendar_hard_04,calendar,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,4.00,9.87,{}
+qwen2.5:7b,raw_json,refund_medium_00,refund,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.65,{}
+qwen2.5:7b,raw_json,refund_medium_01,refund,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.56,{}
+qwen2.5:7b,raw_json,refund_medium_02,refund,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.77,{}
+qwen2.5:7b,raw_json,refund_medium_03,refund,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.63,{}
+qwen2.5:7b,raw_json,refund_medium_04,refund,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.73,{}
+qwen2.5:7b,raw_json,refund_hard_00,refund,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.20,5.73,{}
+qwen2.5:7b,raw_json,refund_hard_01,refund,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.26,{}
+qwen2.5:7b,raw_json,refund_hard_02,refund,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.32,{}
+qwen2.5:7b,raw_json,refund_hard_03,refund,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.24,{}
+qwen2.5:7b,raw_json,refund_hard_04,refund,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.20,{}
+qwen2.5:7b,raw_json,file_medium_00,file_email,medium,5,0.000,too_hard,0.000,1.000,0.000,0.000,5.40,13.52,"{""premature_final"": 5}"
+qwen2.5:7b,raw_json,file_medium_01,file_email,medium,5,0.000,too_hard,0.000,1.000,0.000,0.000,5.00,12.30,"{""premature_final"": 5}"
+qwen2.5:7b,raw_json,file_medium_02,file_email,medium,5,0.000,too_hard,0.000,1.000,0.000,0.000,5.00,12.83,"{""premature_final"": 5}"
+qwen2.5:7b,raw_json,file_medium_03,file_email,medium,5,0.000,too_hard,0.000,1.000,0.000,0.000,5.00,13.20,"{""premature_final"": 5}"
+qwen2.5:7b,raw_json,file_medium_04,file_email,medium,5,0.000,too_hard,0.000,1.000,0.000,0.000,5.00,13.11,"{""premature_final"": 5}"
+qwen2.5:7b,raw_json,file_hard_00,file_email,hard,5,0.000,too_hard,0.000,0.000,1.000,0.000,12.00,29.93,"{""loop_or_timeout"": 5}"
+qwen2.5:7b,raw_json,file_hard_01,file_email,hard,5,0.000,too_hard,0.000,0.400,0.600,0.000,9.60,24.06,"{""loop_or_timeout"": 3, ""premature_final"": 2}"
+qwen2.5:7b,raw_json,file_hard_02,file_email,hard,5,0.000,too_hard,0.000,0.600,0.400,0.000,6.60,16.64,"{""loop_or_timeout"": 2, ""premature_final"": 3}"
+qwen2.5:7b,raw_json,file_hard_03,file_email,hard,5,0.000,too_hard,0.000,0.600,0.400,0.000,6.60,16.46,"{""loop_or_timeout"": 2, ""premature_final"": 3}"
+qwen2.5:7b,raw_json,file_hard_04,file_email,hard,5,0.000,too_hard,0.000,0.200,0.800,0.000,10.20,25.53,"{""loop_or_timeout"": 4, ""premature_final"": 1}"
+qwen2.5:7b,raw_json,inventory_medium_00,inventory,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.03,{}
+qwen2.5:7b,raw_json,inventory_medium_01,inventory,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.55,{}
+qwen2.5:7b,raw_json,inventory_medium_02,inventory,medium,5,0.000,too_hard,0.000,0.000,1.000,0.000,8.00,19.92,"{""loop_or_timeout"": 5}"
+qwen2.5:7b,raw_json,inventory_medium_03,inventory,medium,5,0.000,too_hard,0.000,0.000,1.000,0.000,8.00,19.97,"{""loop_or_timeout"": 5}"
+qwen2.5:7b,raw_json,inventory_medium_04,inventory,medium,5,0.000,too_hard,0.000,0.000,1.000,0.000,8.00,19.94,"{""loop_or_timeout"": 5}"
+qwen2.5:7b,raw_json,inventory_hard_00,inventory,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.06,{}
+qwen2.5:7b,raw_json,inventory_hard_01,inventory,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.07,{}
+qwen2.5:7b,raw_json,inventory_hard_02,inventory,hard,5,0.600,calibrated,0.000,0.000,0.400,0.000,6.00,14.91,"{""loop_or_timeout"": 2}"
+qwen2.5:7b,raw_json,inventory_hard_03,inventory,hard,5,0.600,calibrated,0.000,0.000,0.400,0.000,6.00,14.95,"{""loop_or_timeout"": 2}"
+qwen2.5:7b,raw_json,inventory_hard_04,inventory,hard,5,0.800,calibrated,0.000,0.000,0.200,0.000,4.00,9.99,"{""loop_or_timeout"": 1}"
+qwen2.5:7b,json_parse_repair,calendar_medium_00,calendar,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.41,{}
+qwen2.5:7b,json_parse_repair,calendar_medium_01,calendar,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.40,{}
+qwen2.5:7b,json_parse_repair,calendar_medium_02,calendar,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.42,{}
+qwen2.5:7b,json_parse_repair,calendar_medium_03,calendar,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.39,{}
+qwen2.5:7b,json_parse_repair,calendar_medium_04,calendar,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.39,{}
+qwen2.5:7b,json_parse_repair,calendar_hard_00,calendar,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,4.00,10.42,{}
+qwen2.5:7b,json_parse_repair,calendar_hard_01,calendar,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,4.00,10.38,{}
+qwen2.5:7b,json_parse_repair,calendar_hard_02,calendar,hard,5,0.600,calibrated,0.000,0.200,0.200,0.000,7.20,18.74,"{""loop_or_timeout"": 1, ""premature_final"": 1}"
+qwen2.5:7b,json_parse_repair,calendar_hard_03,calendar,hard,5,0.600,calibrated,0.000,0.000,0.400,0.000,7.40,19.26,"{""loop_or_timeout"": 2}"
+qwen2.5:7b,json_parse_repair,calendar_hard_04,calendar,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,4.00,10.41,{}
+qwen2.5:7b,json_parse_repair,refund_medium_00,refund,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.64,{}
+qwen2.5:7b,json_parse_repair,refund_medium_01,refund,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.62,{}
+qwen2.5:7b,json_parse_repair,refund_medium_02,refund,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.66,{}
+qwen2.5:7b,json_parse_repair,refund_medium_03,refund,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.62,{}
+qwen2.5:7b,json_parse_repair,refund_medium_04,refund,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.62,{}
+qwen2.5:7b,json_parse_repair,refund_hard_00,refund,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.02,{}
+qwen2.5:7b,json_parse_repair,refund_hard_01,refund,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.02,{}
+qwen2.5:7b,json_parse_repair,refund_hard_02,refund,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.05,{}
+qwen2.5:7b,json_parse_repair,refund_hard_03,refund,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.02,{}
+qwen2.5:7b,json_parse_repair,refund_hard_04,refund,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.02,{}
+qwen2.5:7b,json_parse_repair,file_medium_00,file_email,medium,5,0.000,too_hard,0.000,0.800,0.200,0.000,5.60,14.43,"{""loop_or_timeout"": 1, ""premature_final"": 4}"
+qwen2.5:7b,json_parse_repair,file_medium_01,file_email,medium,5,0.000,too_hard,0.000,1.000,0.000,0.000,5.00,12.90,"{""premature_final"": 5}"
+qwen2.5:7b,json_parse_repair,file_medium_02,file_email,medium,5,0.000,too_hard,0.000,1.000,0.000,0.000,5.00,12.94,"{""premature_final"": 5}"
+qwen2.5:7b,json_parse_repair,file_medium_03,file_email,medium,5,0.000,too_hard,0.000,1.000,0.000,0.000,5.00,13.01,"{""premature_final"": 5}"
+qwen2.5:7b,json_parse_repair,file_medium_04,file_email,medium,5,0.200,calibrated,0.000,0.800,0.000,0.000,4.60,12.03,"{""premature_final"": 4}"
+qwen2.5:7b,json_parse_repair,file_hard_00,file_email,hard,5,0.000,too_hard,0.000,0.400,0.600,0.000,8.80,22.07,"{""loop_or_timeout"": 3, ""premature_final"": 2}"
+qwen2.5:7b,json_parse_repair,file_hard_01,file_email,hard,5,0.000,too_hard,0.000,0.200,0.800,0.000,10.20,25.47,"{""loop_or_timeout"": 4, ""premature_final"": 1}"
+qwen2.5:7b,json_parse_repair,file_hard_02,file_email,hard,5,0.000,too_hard,0.000,0.200,0.800,0.000,10.20,27.61,"{""loop_or_timeout"": 4, ""premature_final"": 1}"
+qwen2.5:7b,json_parse_repair,file_hard_03,file_email,hard,5,0.000,too_hard,0.000,0.400,0.600,0.000,8.40,23.77,"{""loop_or_timeout"": 3, ""premature_final"": 2}"
+qwen2.5:7b,json_parse_repair,file_hard_04,file_email,hard,5,0.000,too_hard,0.000,0.600,0.400,0.000,6.60,18.61,"{""loop_or_timeout"": 2, ""premature_final"": 3}"
+qwen2.5:7b,json_parse_repair,inventory_medium_00,inventory,medium,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.87,{}
+qwen2.5:7b,json_parse_repair,inventory_medium_01,inventory,medium,5,0.800,calibrated,0.000,0.000,0.200,0.000,5.20,15.38,"{""loop_or_timeout"": 1}"
+qwen2.5:7b,json_parse_repair,inventory_medium_02,inventory,medium,5,0.000,too_hard,0.000,0.000,1.000,0.000,8.00,23.17,"{""loop_or_timeout"": 5}"
+qwen2.5:7b,json_parse_repair,inventory_medium_03,inventory,medium,5,0.000,too_hard,0.000,0.000,1.000,0.000,8.00,23.62,"{""loop_or_timeout"": 5}"
+qwen2.5:7b,json_parse_repair,inventory_medium_04,inventory,medium,5,0.000,too_hard,0.000,0.000,1.000,0.000,8.00,23.55,"{""loop_or_timeout"": 5}"
+qwen2.5:7b,json_parse_repair,inventory_hard_00,inventory,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.91,{}
+qwen2.5:7b,json_parse_repair,inventory_hard_01,inventory,hard,5,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.75,{}
+qwen2.5:7b,json_parse_repair,inventory_hard_02,inventory,hard,5,0.800,calibrated,0.000,0.000,0.200,0.000,4.00,11.83,"{""loop_or_timeout"": 1}"
+qwen2.5:7b,json_parse_repair,inventory_hard_03,inventory,hard,5,0.400,calibrated,0.000,0.000,0.600,0.000,8.00,23.60,"{""loop_or_timeout"": 3}"
+qwen2.5:7b,json_parse_repair,inventory_hard_04,inventory,hard,5,0.600,calibrated,0.000,0.000,0.400,0.000,6.00,17.80,"{""loop_or_timeout"": 2}"
+llama3.1:8b,tool_compiler,calendar_medium_00,calendar,medium,2,1.000,too_easy,0.000,0.000,0.000,0.000,4.50,13.02,{}
+llama3.1:8b,tool_compiler,calendar_medium_01,calendar,medium,2,1.000,too_easy,0.000,0.000,0.000,0.000,5.00,12.91,{}
+llama3.1:8b,tool_compiler,calendar_hard_00,calendar,hard,2,0.000,too_hard,0.000,0.000,1.000,0.000,12.00,29.09,"{""loop_or_timeout"": 2}"
+llama3.1:8b,tool_compiler,calendar_hard_01,calendar,hard,2,0.000,too_hard,0.000,0.000,1.000,0.000,12.00,29.39,"{""loop_or_timeout"": 2}"
+llama3.1:8b,tool_compiler,refund_medium_00,refund,medium,2,1.000,too_easy,0.000,0.000,0.000,0.000,4.00,9.84,{}
+llama3.1:8b,tool_compiler,refund_medium_01,refund,medium,2,1.000,too_easy,0.000,0.000,0.000,0.000,4.00,9.78,{}
+llama3.1:8b,tool_compiler,refund_hard_00,refund,hard,2,1.000,too_easy,0.000,0.000,0.000,0.000,9.50,23.05,{}
+llama3.1:8b,tool_compiler,refund_hard_01,refund,hard,2,1.000,too_easy,0.000,0.000,0.000,0.000,6.00,14.61,{}
+llama3.1:8b,tool_compiler,file_medium_00,file_email,medium,2,1.000,too_easy,0.000,0.000,0.000,0.000,3.50,8.58,{}
+llama3.1:8b,tool_compiler,file_medium_01,file_email,medium,2,1.000,too_easy,0.000,0.000,0.000,0.000,3.50,8.69,{}
+llama3.1:8b,tool_compiler,file_hard_00,file_email,hard,2,0.000,too_hard,0.000,0.000,1.000,0.000,12.00,29.11,"{""loop_or_timeout"": 2}"
+llama3.1:8b,tool_compiler,file_hard_01,file_email,hard,2,0.000,too_hard,0.000,0.000,1.000,0.000,12.00,28.93,"{""loop_or_timeout"": 2}"
+llama3.1:8b,tool_compiler,inventory_medium_00,inventory,medium,2,0.000,too_hard,0.000,0.000,1.000,0.000,8.00,19.24,"{""loop_or_timeout"": 2}"
+llama3.1:8b,tool_compiler,inventory_medium_01,inventory,medium,2,0.000,too_hard,0.000,0.000,1.000,0.000,8.00,19.19,"{""loop_or_timeout"": 2}"
+llama3.1:8b,tool_compiler,inventory_hard_00,inventory,hard,2,0.000,too_hard,0.000,0.000,1.000,0.000,12.00,28.87,"{""loop_or_timeout"": 2}"
+llama3.1:8b,tool_compiler,inventory_hard_01,inventory,hard,2,0.000,too_hard,0.000,0.000,1.000,0.000,12.00,29.09,"{""loop_or_timeout"": 2}"
+qwen2.5:14b,tool_compiler,calendar_medium_00,calendar,medium,2,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,7.29,{}
+qwen2.5:14b,tool_compiler,calendar_medium_01,calendar,medium,2,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.95,{}
+qwen2.5:14b,tool_compiler,calendar_hard_00,calendar,hard,2,0.500,calibrated,0.000,0.500,0.000,0.000,3.00,8.51,"{""premature_final"": 1}"
+qwen2.5:14b,tool_compiler,calendar_hard_01,calendar,hard,2,1.000,too_easy,0.000,0.000,0.000,0.000,4.00,11.00,{}
+qwen2.5:14b,tool_compiler,refund_medium_00,refund,medium,2,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.84,{}
+qwen2.5:14b,tool_compiler,refund_medium_01,refund,medium,2,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.79,{}
+qwen2.5:14b,tool_compiler,refund_hard_00,refund,hard,2,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.74,{}
+qwen2.5:14b,tool_compiler,refund_hard_01,refund,hard,2,1.000,too_easy,0.000,0.000,0.000,0.000,2.50,6.48,{}
+qwen2.5:14b,tool_compiler,file_medium_00,file_email,medium,2,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.91,{}
+qwen2.5:14b,tool_compiler,file_medium_01,file_email,medium,2,1.000,too_easy,0.000,0.000,0.000,0.000,3.00,7.88,{}
+qwen2.5:14b,tool_compiler,file_hard_00,file_email,hard,2,0.000,too_hard,0.000,0.000,1.000,0.000,12.00,36.02,"{""loop_or_timeout"": 2}"
+qwen2.5:14b,tool_compiler,file_hard_01,file_email,hard,2,0.000,too_hard,0.000,0.000,1.000,0.000,12.00,35.47,"{""loop_or_timeout"": 2}"
+qwen2.5:14b,tool_compiler,inventory_medium_00,inventory,medium,2,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.22,{}
+qwen2.5:14b,tool_compiler,inventory_medium_01,inventory,medium,2,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.31,{}
+qwen2.5:14b,tool_compiler,inventory_hard_00,inventory,hard,2,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.27,{}
+qwen2.5:14b,tool_compiler,inventory_hard_01,inventory,hard,2,1.000,too_easy,0.000,0.000,0.000,0.000,2.00,5.27,{}

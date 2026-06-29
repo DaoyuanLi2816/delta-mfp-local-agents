@@ -1,0 +1,4 @@
+model,quantization,context_length,decoding,probe_latency_sec,probe_ok,error
+qwen2.5:7b,ollama default,default,temperature=0.35; num_predict=64 main,2.29,True,
+llama3.1:8b,ollama default,default,temperature=0.35; num_predict=64 main,5.86,True,
+qwen2.5:14b,ollama default,default,temperature=0.35; num_predict=64 main,6.61,True,
