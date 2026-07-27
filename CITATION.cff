@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: "Before the Fall: Delta Minimal Failing Prefixes for Local Tool-Use Agent Failures"
+message: "If you use the method, benchmark, code, or results, please cite the paper and this repository."
+type: software
+authors:
+  - given-names: Daoyuan
+    family-names: Li
+    affiliation: University of Minnesota Twin Cities
+    email: li002504@umn.edu
+version: 1.1.0
+date-released: "2026-07-26"
+license: MIT
+repository-code: "https://github.com/DaoyuanLi2816/delta-mfp-local-agents"
+url: "https://github.com/DaoyuanLi2816/delta-mfp-local-agents"
+keywords:
+  - tool-use-agents
+  - failure-diagnosis
+  - counterfactual-replay
+  - local-llm
+  - reproducible-research
+preferred-citation:
+  type: generic
+  title: "Before the Fall: Delta Minimal Failing Prefixes for Local Tool-Use Agent Failures"
+  authors:
+    - given-names: Daoyuan
+      family-names: Li
+      affiliation: University of Minnesota Twin Cities
+      email: li002504@umn.edu
+  year: 2026
+  url: "https://openreview.net/forum?id=KAA8FR6fEq"
+  notes: >-
+    Accepted at the ICML 2026 Workshop on Failure Modes in Agentic AI
+    (FAGEN), non-archival.

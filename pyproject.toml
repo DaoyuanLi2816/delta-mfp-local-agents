@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "delta-mfp-local-agents"
+version = "1.1.0"
+description = "Counterfactual-replay failure diagnosis for local tool-use agents"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Daoyuan Li", email = "li002504@umn.edu"}]
+keywords = [
+  "tool-use-agents",
+  "failure-diagnosis",
+  "counterfactual-replay",
+  "local-llm",
+  "reproducible-research",
+]
+dependencies = [
+  "matplotlib>=3.7",
+  "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.urls]
+Homepage = "https://github.com/DaoyuanLi2816/delta-mfp-local-agents"
+Repository = "https://github.com/DaoyuanLi2816/delta-mfp-local-agents"
+Paper = "https://openreview.net/forum?id=KAA8FR6fEq"
+
+[tool.setuptools]
+package-dir = {"" = "code"}
+
+[tool.setuptools.packages.find]
+where = ["code"]
+include = ["agents*", "analysis*", "benchmarks*", "plotting*", "repairs*", "replay*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

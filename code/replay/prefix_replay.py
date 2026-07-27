@@ -20,7 +20,15 @@ def replay_from_prefix(
     mode: str = "imperfect",
     repair_type: Optional[str] = None,
 ) -> JsonDict:
-    snapshot = deepcopy(trace["snapshots"][prefix_index])
+    snapshots = trace.get("snapshots", [])
+    if not seeds:
+        raise ValueError("replay requires at least one seed")
+    if prefix_index < 0 or prefix_index >= len(snapshots):
+        raise IndexError(
+            f"prefix_index {prefix_index} is outside saved snapshot range "
+            f"[0, {len(snapshots) - 1}]"
+        )
+    snapshot = deepcopy(snapshots[prefix_index])
     extra_tool_calls = 0
     extra_tokens = 0
     if repair_type:

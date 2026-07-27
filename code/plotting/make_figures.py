@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 from collections import Counter, defaultdict
 import csv
 import json
@@ -22,6 +23,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data" / "processed"
 TRACES = ROOT / "data" / "traces"
 FIGS = ROOT / "paper" / "figures"
+TABLES = ROOT / "paper" / "tables"
 
 
 PALETTE = {
@@ -527,10 +529,9 @@ def _write_repair_compact_table(
         lo, hi = _wilson_ci(succ, trials)
         return f"{mean:.2f} [{lo:.2f},{hi:.2f}] (n={n})"
 
-    paper_tables = ROOT / "paper" / "tables"
-    paper_tables.mkdir(parents=True, exist_ok=True)
-    csv_path = paper_tables / "table4_repair_compact.csv"
-    tex_path = paper_tables / "table4_repair_compact.tex"
+    TABLES.mkdir(parents=True, exist_ok=True)
+    csv_path = TABLES / "table4_repair_compact.csv"
+    tex_path = TABLES / "table4_repair_compact.tex"
 
     with csv_path.open("w", encoding="utf-8", newline="") as fh:
         writer = csv.writer(fh)
@@ -728,10 +729,9 @@ def fig_n5_stability_table() -> None:
     and writes `paper/tables/table_n5_stability.tex/.csv` summarising the
     regime shift per fault subtype.
     """
-    paper_tables = ROOT / "paper" / "tables"
-    paper_tables.mkdir(parents=True, exist_ok=True)
-    tex_path = paper_tables / "table_n5_stability.tex"
-    csv_path = paper_tables / "table_n5_stability.csv"
+    TABLES.mkdir(parents=True, exist_ok=True)
+    tex_path = TABLES / "table_n5_stability.tex"
+    csv_path = TABLES / "table_n5_stability.csv"
 
     # Camera-ready: prefer the full 50-trace stability comparison.
     rows = read_csv(DATA / "soft_replay_stability_full.csv") \
@@ -842,6 +842,16 @@ def fig_n5_stability_table() -> None:
 
 
 def main() -> None:
+    global FIGS, TABLES
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--out", type=Path, default=FIGS,
+                        help="directory for generated PDF and PNG figures")
+    parser.add_argument("--tables-out", type=Path, default=TABLES,
+                        help="directory for generated compact LaTeX tables")
+    args = parser.parse_args()
+    FIGS = args.out.resolve()
+    TABLES = args.tables_out.resolve()
+
     fig1_taxonomy()
     fig2_failure_regimes()
     fig3_fault_distance()

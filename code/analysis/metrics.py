@@ -16,6 +16,10 @@ def mean(xs: List[float]) -> float:
 
 
 def wilson_ci(successes: int, n: int, z: float = 1.96) -> Dict[str, float]:
+    if n < 0 or successes < 0 or successes > n:
+        raise ValueError("wilson_ci requires 0 <= successes <= n")
+    if z <= 0:
+        raise ValueError("wilson_ci requires z > 0")
     if n == 0:
         return {"lo": 0.0, "hi": 0.0}
     phat = successes / n
@@ -76,6 +80,4 @@ def latex_escape(value: Any) -> str:
         "~": "\\textasciitilde{}",
         "^": "\\textasciicircum{}",
     }
-    for src, dst in replacements.items():
-        text = text.replace(src, dst)
-    return text
+    return "".join(replacements.get(char, char) for char in text)
