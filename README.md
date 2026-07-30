@@ -18,6 +18,14 @@ This is the public artifact for:
 - [Final PDF](paper/main.pdf)
 - [Paper-to-artifact map](docs/PAPER_TO_ARTIFACT.md)
 
+## Poster
+
+The poster summarizes the Delta-MFP definition, replay phase diagram, observed
+failure-regime profiles, and the diagnostic implications of finite replay
+budgets. Click the image for the full-resolution 4096×2304 PNG.
+
+[![Before the Fall research poster](paper/poster.png)](paper/poster.png)
+
 Delta Minimal Failing Prefix (Delta-MFP) is a counterfactual-replay diagnostic
 for stateful tool-use agents. Given a failed trace, it estimates the replay
 failure probability `p_k` at each saved prefix and compares it with `p_0` from
