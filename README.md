@@ -8,7 +8,7 @@ failure regime.**
 [![Poster](https://img.shields.io/badge/poster-PNG-6f42c1)](paper/poster.png)
 [![Code license](https://img.shields.io/badge/code-MIT-green.svg)](LICENSE)
 
-> **ICML 2026 workshop paper (non-archival).**
+> **ICML 2026 workshop paper.**
 > *Before the Fall: Delta Minimal Failing Prefixes for Local Tool-Use Agent
 > Failures* was accepted at the Workshop on Failure Modes in Agentic AI
 > (FAGEN).
